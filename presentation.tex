@@ -172,7 +172,7 @@
 
 The best technique to avoid the troubles with computers is to have deep
 knowledge about wide concepts in computer science. Paradoxically both
-cases leads to the same solution!
+cases leads to the same conclusion!
   \end{itemize}
 \end{frame}
 
@@ -262,20 +262,35 @@ cases leads to the same solution!
   \end{frame}
 \end{section}
 
+\begin{frame}\frametitle{Examples}
+      \includegraphics[scale = .5]{git1}    
+      \includegraphics[scale = .5]{git2}    
+%      \includegraphics[scale = .5]{git3}    
+      \includegraphics[scale = .5]{git4}    
+\end{frame}
+
+
 % Data formats
 
 \begin{section}{Data Formats}
-  \begin{frame}\frametitle{ASCII}
-  \begin{itemize}
-    \item{Why is it important?}
-    \item{Where I can learn it?}
-  \end{itemize}
-  \end{frame}
+  %% \begin{frame}\frametitle{ASCII}
+  %% \begin{itemize}
+  %%   \item{Why is it important?}
+  %%   \item{Where I can learn it?}
+  %% \end{itemize}
+  %% \end{frame}
 
   \begin{frame}\frametitle{FITs}
   \begin{itemize}
     \item{Why is it important?}
+      \begin{itemize}
+      \item De-Facto standard in Astronomy
+      \item Flexible, Efficient, ASCII MetaData
+      \end{itemize}
     \item{Where I can learn it?}
+      \begin{itemize}
+      \item \url{http://fits.gsfc.nasa.gov}
+      \end{itemize}
   \end{itemize}
   \end{frame}
 
@@ -300,9 +315,29 @@ No.    Name         Type      Cards   Dimensions   Format
   \begin{frame}\frametitle{Relational Databases}
   \begin{itemize}
     \item{Why is it important?}
+      \begin{itemize}
+      \item Sweetspot 100GiB -- 1TiB
+      \item SQL = Efficient way to manipulate data
+      \end{itemize}
     \item{Where I can learn it?}
+      \begin{itemize}
+      \item \url{http://www.sdss.org}
+      \end{itemize}
   \end{itemize}
   \end{frame}
+
+\begin{frame}[containsverbatim]\frametitle{Example:Spectra from SEGUE project }
+\begin{lstlisting}[language=SQL]
+SELECT  objid,dbo.fGetUrlFitsSpectrum(s.specObjID)                                                           
+FROM SpecPhotoAll s, platex p                                                                         
+WHERE s.specObjID is not null                                                                         
+AND s.plateid = p.plateid                                                                             
+AND p.programname LIKE 'segue%'                                                                       
+AND specClass = 1
+\end{lstlisting}
+\end{frame}
+
+
 
   \begin{frame}\frametitle{Post-relational Databases}
   \begin{itemize}
@@ -338,7 +373,15 @@ No.    Name         Type      Cards   Dimensions   Format
   \begin{frame}\frametitle{The power of \TeX}
   \begin{itemize}
     \item{Why is it important?}
+      \begin{itemize}
+      \item Typography
+      \item Mathematics
+      \item Thesis, articles, presentations, posters, \ldots
+      \end{itemize}
     \item{Where I can learn it?}
+      \begin{itemize}
+      \item MUNI: Plch, Sojka
+      \end{itemize}
   \end{itemize}
 
 \end{frame}
